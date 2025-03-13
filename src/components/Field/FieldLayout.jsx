@@ -1,4 +1,4 @@
-import styles from './field.module.css';
+// import styles from './field.module.css';
 import {connect } from 'react-redux'
 import { Component } from 'react'
 
@@ -9,9 +9,9 @@ export class FieldLayoutContainer extends Component {
 
     render() {
         return (
-            <div className={styles.field}>
+            <div className="grid grid-cols-3">
                 {this.props.field.map((item, index) =>
-                    <button key={index} onClick={() => this.props.makeMove(this.props.currentPlayer, index)} className={`${styles.fieldButton} ${item && styles[item]} ${item && styles.disabled}`}>{item}</button>
+                    <button key={index} onClick={() => this.props.makeMove(this.props.currentPlayer, index)} className={`rounded-none w-60 h-60 p-0 m-0 border border-black text-9xl cursor-pointer ${item} ${item && 'cursor-auto pointer-events-none'}`}>{item}</button>
                 )}
             </div >
         )

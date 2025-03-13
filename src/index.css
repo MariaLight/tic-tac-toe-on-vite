@@ -3,3 +3,13 @@
 html {
     font-size: calc(100vw / 1400 * 10);
 }
+
+@layer components{
+    .x {
+        color: red
+    }
+
+    .o {
+        color: blue
+    }
+}

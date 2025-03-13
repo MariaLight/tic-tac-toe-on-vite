@@ -1,4 +1,4 @@
-const FIRST_PLAYER = 'o';
+const FIRST_PLAYER = 'x';
 
 export const initialState = {
     currentPlayer: FIRST_PLAYER,

@@ -9,10 +9,10 @@ export class InformationLayoutConatiner extends Component {
 
     render() {
         return (
-            <div className="text-center text-7xl" >
+            <div className="text-center text-7xl mt-16" >
                 <p>{this.props.text}</p>
                 {this.props.isGameEnded &&
-                    <button className="button" onClick={this.props.startAgain}>Начать сначала</button>}
+                    <button className="transition linear duration-200 hover:bg-purple-500 hover:text-white cursor-pointer mt-16 py-8 px-16 text-5xl bg-purple-200 rounded-4xl" onClick={this.props.startAgain}>Начать сначала</button>}
             </div >
         )
     }
