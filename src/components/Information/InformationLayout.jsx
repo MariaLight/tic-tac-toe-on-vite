@@ -9,7 +9,7 @@ export class InformationLayoutConatiner extends Component {
 
     render() {
         return (
-            <div className="text-center fz-xl" >
+            <div className="text-center text-7xl" >
                 <p>{this.props.text}</p>
                 {this.props.isGameEnded &&
                     <button className="button" onClick={this.props.startAgain}>Начать сначала</button>}

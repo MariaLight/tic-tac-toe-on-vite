@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+html {
+    font-size: calc(100vw / 1400 * 10);
+}

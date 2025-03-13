@@ -5,7 +5,7 @@ import { Information } from './components/Information/Information';
 export const AppLayout = () => {
 
   return (
-    <div className="app">
+    <div className="pt-12 flex flex-col items-center">
       <Field />
       <Information />
 
